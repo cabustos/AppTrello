@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+
+body {
+  background: #89bcda;
+
+}
+
+.contenedortotal {
+  background-color: #0079bf;
+  color: black;
+  display: flex;
+  font-family: sans-serif;
+  font-weight: bold;
+  gap: 25px;
+  /*Espaciado entre los flex*/
+}
+
+.div-boton-compartir{
+  display: none;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .contenedortotal {
+    flex-direction: column;
+  } 
+  .div-boton-compartir{
+    display: block;
+  }
+  .boton-compartir{
+    color: #049c11;
+    font-size:x-large
+  }
+
+}
+
+
+
+ 
+ 
+ 
+ 
+ @keyframes fly-1 {
+  from {
+   transform: translateY(0.1em);
+  }
+ 
+  to {
+   transform: translateY(-0.1em);
+  }
+ }
+
+
+
+
+.tareas-container {
+  background-color: #1ba431;
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;  
+}
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  border: none;
+  margin-bottom: 10px;
+}
+
+
+.navbar {
+  background: #10ed0c;
+  height: 40px;
+}
+
+
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background-color: #f6f6f6;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+
+.tituloapp {
+  font-family: 'Arial', cursive;
+  margin-left: 20px;
+  color: #093907;
+}
+
+.titulocard {
+  font-family: 'Varela Round', sans-serif;
+  font-size: small;
+  color: #1d1d1d;
+  text-transform: uppercase;
+}
+
+.tareacard {
+  font-family: 'Varela Round', sans-serif;
+  font-size:medium;
+  color: #1d1d1d; 
+}
+span{
+  font-size: small;
+  font-family: 'Varela Round', sans-serif;
+  color: #888888;
+}
+
+.btn-delete {
+  background-color: #d0d0d1;
+  border-color: #ffffff;
+  color: #1d1d1d;
+  font-size: small;
+}
+
+.btn-edit {
+  background-color: #026aa7;
+  border-color: #ffffff;
+  font-size: small;
+}
+
+
+
+
+
+.modal-content{
+  background: linear-gradient(to right, #f0f1f4, #027817) !important;
+    color: rgb(184, 182, 182);
+    border-color: #0af70e;
+    border-radius: 15px;
+    
+    
+}
