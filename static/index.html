@@ -1,4 +1,4 @@
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <h1 class="tituloapp">Actividades</h1>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button title="menu" type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -38,25 +38,17 @@
               
               <div class="tareas-container" id="tareas-creadas">
                 <i class="icofont-tasks-alt"></i> Pendientes por Realizar
-                <div class="card card-body mt-2 ">Actividad 1</div>
-                <div class="card card-body mt-2 ">Actividad 9</div>
-                <div class="card card-body mt-2 ">Actividad 6</div>
+                <div id="tareasporhacer"></div>
               </div>
         
               
               <div class="tareas-container" id="tareas-proceso">
-                <i class="icofont-tools-alt-2"></i> Trabajando en ellas
-                <div class="card card-body mt-2 ">Actividad 2</div>
-                <div class="card card-body mt-2 ">Actividad 3</div>
-                <div class="card card-body mt-2 ">Actividad 4</div>
-
-              </div>
-        
+                <i class="icofont-tools-alt-2"></i> Trabajando en ellas</div>
+                <div id="tareas-proceso"></div>    
               
               <div class="tareas-container" id="tareas-finalizadas">               
-                    <i class="icofont-check-circled"></i> Actividades Realizadas               
-                    <div class="card card-body mt-2 ">Actividad 8</div>
-                    
+                    <i class="icofont-check-circled"></i> Actividades Realizadas  
+                    <div id="tareas-finalizadas"></div>             
               </div>
             </div>
           </div>          
@@ -97,7 +89,7 @@
      
 
       <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="utiles.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
          crossorigin="anonymous"></script>
