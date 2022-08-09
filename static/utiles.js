@@ -7,7 +7,7 @@ pintar_tareas_realizado();
 
 function pintar_tareas_porhacer() {
     let porhacer = document.getElementById("tareasporhacer");
-    //porhacer.innerHTML = '<div class="tareas-container-unit" id="tareasunitaria">Prueba</div>'
+    porhacer.innerHTML = "";
     let tareas = [];
     axios.get('http://localhost:3000/task?estado=porhacer', {
         responseType: 'json'
@@ -65,5 +65,27 @@ function pintar_tareas_realizado() {
         })
         .catch(function(err) {
           mensaje.innerText = 'Error de conexión ' + err;
+        })
+}
+
+function enviar_tarea() {
+    titulo = document.getElementById("tituloform");
+    actividad = document.getElementById("actividadform");
+    console.log(titulo.value);
+    console.log(actividad.value);
+    axios.post(`http://localhost:3000/task`, {
+        titulo: titulo.value,
+        descripcion:actividad.value,
+        estado:"porhacer"
+      })
+        .then(function(res) {
+          if(res.status==200) {
+            console.log(res)
+            pintar_tareas_porhacer();
+          }
+         // console.log(res);
+        })
+        .catch(function(err) {
+          console.log(err);
         })
 }

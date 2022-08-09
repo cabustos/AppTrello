@@ -62,26 +62,25 @@
                     <h5 class="modal-title" id="agregarLabel"><i class="icofont-tasks"></i> Crear Actividad</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form id="add-tarea-form">
-                    <div class="modal-body">
+                  <div class="modal-body">
       
                         <div>
                             <label for="task-title">Título:</label>
-                            <input type="text" name="titulo" class=""
+                            <input type="text" id="tituloform" name="titulo" class=""
                                 placeholder="Título de la Actividad" id="titulo"/>
                         </div>
                         <div class="mt-2">
                             <label for="task-description">Descripción:</label>
-                            <textarea name="actividad" rows="3" class="form-control mb-3"
+                            <textarea id="actividadform" name="actividad" rows="3" class="form-control mb-3"
                                 placeholder="Ingrese la descripción de la Actividad" id="actividad"></textarea>
                         </div>            
       
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>                
-                        <button class="btn btn-primary" type="submit">Guardar</button>
+                        <button class="btn btn-primary" onclick="enviar_tarea()">Guardar</button>
                     </div>
-                </form>
+                
             </div>
         </div>
       </div>
